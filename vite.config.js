@@ -12,7 +12,7 @@ export default defineConfig({
     base: '',
     root: './src',
     build: {
-        outDir: '../dist',
+        outDir: '../docs',
         emptyOutDir: true
     },
     plugins: [react()],
