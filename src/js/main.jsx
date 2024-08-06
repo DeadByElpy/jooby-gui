@@ -30,6 +30,8 @@ const theme = createTheme({
     }
 });
 
+window.addEventListener('beforeunload', event => event.preventDefault());
+
 
 createRoot(document.getElementById('root')).render(
     <React.StrictMode>

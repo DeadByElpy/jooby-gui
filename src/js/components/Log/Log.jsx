@@ -161,7 +161,7 @@ const Log = ({
                                     <IconButtonWithTooltip
                                         title="Copy dump"
                                         onClick={() => copyToClipboard(
-                                            hex,
+                                            hex.replaceAll(' ', ''),
                                             {message: 'Message dump copied to clipboard'}
                                         )}
                                     >
@@ -278,7 +278,7 @@ const Log = ({
                                                             <IconButtonWithTooltip
                                                                 title="Copy dump"
                                                                 onClick={() => copyToClipboard(
-                                                                    command.hex,
+                                                                    command.hex.replaceAll(' ', ''),
                                                                     {message: 'Command dump copied to clipboard'}
                                                                 )}
                                                             >
